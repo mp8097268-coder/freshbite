@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshBite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+            <a href="cart.html" class="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+</a>
+
+            <div class="logo">
+                🍔 FreshBite
+            </div>
+
+            <ul class="nav-links"></ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="restaurants.html">Restaurants</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="login.html">
+    <button class="login-btn">Login</button>
+</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Delicious Food Delivered To Your Door</h1>
+
+            <p>Fresh food from your favourite restaurants.</p>
+
+            <button>Order Now</button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <h2>Food Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="image/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="image/burger.png" alt="Burger">
+                <h3>Burger</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="image/biryani.webp" alt="Biryani">
+                <h3>Biryani</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="image/dessert.webp" alt="Dessert">
+                <h3>Dessert</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RESTAURANTS ================= -->
+
+    <section class="restaurants">
+
+        <h2>Popular Restaurants</h2>
+
+        <div class="restaurant-container">
+
+            <div class="restaurant-card">
+
+                <img src="image/dominos.webp" alt="Dominos">
+
+                <div class="restaurant-info">
+
+                    <h3>Domino's Pizza</h3>
+
+                    <p>⭐⭐⭐⭐☆ (4.5)</p>
+
+                    <p>Italian • 30 mins</p>
+
+                    <button>View Menu</button>
+
+                </div>
+
+            </div>
+
+            <div class="restaurant-card">
+
+                <img src="image/kfc.webp" alt="KFC">
+
+                <div class="restaurant-info">
+
+                    <h3>KFC</h3>
+
+                    <p>⭐⭐⭐⭐⭐ (4.8)</p>
+
+                    <p>Fast Food • 25 mins</p>
+
+                    <button>View Menu</button>
+
+                </div>
+
+            </div>
+
+            <div class="restaurant-card">
+
+                <img src="image/burger.png" alt="Burger King">
+
+                <div class="restaurant-info">
+
+                    <h3>Burger King</h3>
+
+                    <p>⭐⭐⭐⭐☆ (4.4)</p>
+
+                    <p>Burger • 20 mins</p>
+
+                    <button>View Menu</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section">
+
+        <h2>Featured Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="food-card">
+
+                <img src="image/pizza.jpg" alt="Pizza">
+
+                <h3>Cheese Pizza</h3>
+
+                <p>₹299</p>
+
+                <button onclick="addToCart('Cheese Pizza',299)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="image/burger.png" alt="Burger">
+
+                <h3>Chicken Burger</h3>
+
+                <p>₹199</p>
+
+                <button onclick="addToCart('Chicken Burger',199)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="image/pasta.webp" alt="Pasta">
+
+                <h3>White Sauce Pasta</h3>
+
+                <p>₹249</p>
+
+                <button onclick="addToCart('White Sauce Pasta',249)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="image/cake.webp" alt="Cake">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>₹149</p>
+
+                <button onclick="addToCart('Chocolate Cake',149)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
