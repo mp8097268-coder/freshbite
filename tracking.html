@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Tracking - FreshBite</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🍔 FreshBite
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="restaurants.html">Restaurants</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="icons">
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+<a href="login.html">
+<button class="login-btn">Login</button>
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="tracking">
+
+<h2>Track Your Order</h2>
+
+<h3>Order ID : <span>#FB2026001</span></h3>
+
+<div class="timeline">
+
+<div class="step completed">
+<i class="fa-solid fa-circle-check"></i>
+<p>Order Placed</p>
+</div>
+
+<div class="step completed">
+<i class="fa-solid fa-circle-check"></i>
+<p>Payment Successful</p>
+</div>
+
+<div class="step active" id="prepare">
+<i class="fa-solid fa-utensils"></i>
+<p>Preparing Food</p>
+</div>
+
+<div class="step" id="delivery">
+<i class="fa-solid fa-motorcycle"></i>
+<p>Out For Delivery</p>
+</div>
+
+<div class="step" id="done">
+<i class="fa-solid fa-house"></i>
+<p>Delivered</p>
+</div>
+
+</div>
+
+<h3 id="status">Preparing your delicious food...</h3>
+
+</section>
+
+<script src="js/tracking.js"></script>
+
+</body>
+</html>

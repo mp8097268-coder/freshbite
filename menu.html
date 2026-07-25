@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - FreshBite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🍔 FreshBite
+    </div>
+
+    <ul class="menu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="restaurants.html">Restaurants</a></li>
+
+        <li><a href="menu.html">Menu</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <div class="icons">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="login.html">
+            <button class="login-btn">Login</button>
+        </a>
+
+    </div>
+
+</nav>
+</header>
+
+<section class="menu-section">
+
+<h2>Our Delicious Menu</h2>
+
+<div class="menu-container">
+
+<div class="food-card">
+
+<img src="image/pizza.jpg" alt="Pizza">
+
+<h3>Cheese Pizza</h3>
+
+<p>₹299</p>
+
+<button onclick="addToCart('Cheese Pizza',299)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/burger.png" alt="Burger">
+
+<h3>Chicken Burger</h3>
+
+<p>₹199</p>
+
+<button onclick="addToCart('Chicken Burger',199)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/pasta.webp" alt="Pasta">
+
+<h3>White Sauce Pasta</h3>
+
+<p>₹249</p>
+
+<button onclick="addToCart('White Sauce Pasta',249)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/cake.webp" alt="Cake">
+
+<h3>Chocolate Cake</h3>
+
+<p>₹149</p>
+
+<button onclick="addToCart('Chocolate Cake',149)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/biryani.webp" alt="Biryani">
+
+<h3>Chicken Biryani</h3>
+
+<p>₹349</p>
+
+<button onclick="addToCart('Chicken Biryani',349)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/sendwich.webp" alt="Sandwich">
+
+<h3>Veg Sandwich</h3>
+
+<p>₹129</p>
+
+<button onclick="addToCart('Veg Sandwich',129)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/fries.webp" alt="Fries">
+
+<h3>French Fries</h3>
+
+<p>₹99</p>
+
+<button onclick="addToCart('French Fries',99)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="image/colddrink.webp" alt="Cold Drink">
+
+<h3>Cold Drink</h3>
+
+<p>₹59</p>
+
+<button onclick="addToCart('Cold Drink',59)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

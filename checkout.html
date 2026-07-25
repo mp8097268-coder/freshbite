@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - FreshBite</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">🍔 FreshBite</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="restaurants.html">Restaurants</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="icons">
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+<a href="login.html">
+<button class="login-btn">Login</button>
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="checkout">
+
+<h2>Checkout</h2>
+
+<form id="checkoutForm">
+
+<h3>Delivery Address</h3>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea placeholder="Enter Delivery Address" rows="4" required></textarea>
+
+<input type="text" placeholder="City" required>
+
+<input type="text" placeholder="Pincode" required>
+
+<hr>
+
+<h3>Select Delivery Time</h3>
+
+<select required>
+
+<option>Choose Delivery Time</option>
+<option>ASAP (20-30 mins)</option>
+<option>30-45 mins</option>
+<option>45-60 mins</option>
+<option>Schedule for Later</option>
+
+</select>
+
+<hr>
+
+<h3>Payment Method</h3>
+
+<label><input type="radio" name="payment" checked> Cash on Delivery</label><br><br>
+
+<label><input type="radio" name="payment"> UPI Payment</label><br><br>
+
+<label><input type="radio" name="payment"> Credit / Debit Card</label><br><br>
+
+<label><input type="radio" name="payment"> Net Banking</label>
+
+<hr>
+
+<h3>Order Summary</h3>
+
+<div class="summary">
+
+<p>Total Items <span>4</span></p>
+
+<p>Subtotal <span>₹896</span></p>
+
+<p>Delivery Charge <span>₹40</span></p>
+
+<p>GST <span>₹45</span></p>
+
+<h2>Total <span>₹981</span></h2>
+
+</div>
+
+<button type="submit">
+Place Order
+</button>
+
+</form>
+
+</section>
+
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
